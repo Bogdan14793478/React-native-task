@@ -1,3 +1,4 @@
+import styled from 'styled-components/native';
 import {StyleSheet} from 'react-native';
 import {getTheme} from '../../helpers/helpers';
 
@@ -7,7 +8,6 @@ const getStyles = () => {
   return StyleSheet.create({
     content: {
       flex: 1,
-      // backgroundColor: colors.background,
     },
     text: {
       marginBottom: 50,
@@ -19,3 +19,17 @@ const getStyles = () => {
 };
 
 export default getStyles;
+
+export const TouchBtn = styled.TouchableOpacity`
+  margin-bottom: 10px;
+`;
+
+export const ViewContainer = styled.View`
+  background-color: ${(props: {colorSecondBtn: string}) =>
+    props.colorSecondBtn};
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+`;
+
+export const TextContainer = styled.Text``;

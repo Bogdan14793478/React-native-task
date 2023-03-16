@@ -12,7 +12,6 @@ const DrawerTab = createDrawerNavigator();
 export const AppContainer = () => {
   const loading = false;
   const session = true;
-  console.log('AppContainer work');
 
   if (loading) {
     return <Loader />;
@@ -29,7 +28,6 @@ export const AppContainer = () => {
 };
 
 function DrawerView(props: any) {
-  console.log(props, 'props');
   return (
     <View style={{marginTop: 40}}>
       <Button
