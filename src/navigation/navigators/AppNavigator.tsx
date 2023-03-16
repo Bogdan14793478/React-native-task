@@ -21,7 +21,6 @@ export const AppNavigator = () => {
         headerShown: false,
       }}>
       <Stack.Screen name={AppScreens.UnitPage} component={BottomTabs} />
-      {/* <Stack.Screen name={AppScreens.SecondPage} component={SecondPage} /> */}
     </Stack.Navigator>
   );
 };

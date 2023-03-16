@@ -1,8 +1,10 @@
+import 'react-native-gesture-handler';
 import React from 'react';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {DarkTheme, DefaultTheme} from './src/styles/themes';
 import {AppContainer} from './src/navigation/AppContainer';
+import {DrawerNav} from './src/navigation/drawerNav/DrawerNav';
 
 enum ColorScheme {
   Dark = 'dark',
@@ -17,7 +19,9 @@ function App(): JSX.Element {
       theme={
         (scheme as ColorScheme) === ColorScheme.Dark ? DarkTheme : DefaultTheme
       }>
-      <AppContainer />
+      <DrawerNav>
+        <AppContainer />
+      </DrawerNav>
     </NavigationContainer>
   );
 }
