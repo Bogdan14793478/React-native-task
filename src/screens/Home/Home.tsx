@@ -23,8 +23,6 @@ const Home = () => {
     (state: RootState) => state.color.colorThirdBtn,
   );
 
-  console.log(colorFirstBtn, colorSecondBtn, colorThirdBtn);
-
   const styles = getStyles();
 
   const stylesList = StyleSheet.create({
