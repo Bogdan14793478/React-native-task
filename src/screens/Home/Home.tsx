@@ -1,7 +1,6 @@
 import React from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
-// import Button from '../../components/Button/Button';
 import getStyles, {TextContainer, TouchBtn, ViewContainer} from './styles';
 import {RootState} from '../../redux/actions/interface';
 import {
@@ -38,9 +37,19 @@ const Home = () => {
   });
 
   const changeColorBtn = (name: string): void => {
-    if (name === 'first') dispatch(changeColorFirst(1));
-    if (name === 'second') dispatch(changeColorSecond(1));
-    if (name === 'third') dispatch(changeColorThird(1));
+    switch (name) {
+      case 'first':
+        dispatch(changeColorFirst(1));
+        break;
+      case 'second':
+        dispatch(changeColorSecond(1));
+        break;
+      case 'third':
+        dispatch(changeColorThird(1));
+        break;
+      default:
+        break;
+    }
   };
 
   return (

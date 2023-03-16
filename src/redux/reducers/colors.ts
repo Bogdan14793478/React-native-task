@@ -42,7 +42,6 @@ export const stateColorReducer = (
       }
       break;
     case ActionTypes.CHANGE_COLOR_SB:
-      console.log(action.payload, 'action.payload');
       let numberClr = action.payload;
       const countF = state.numberSecondBtn;
       if (countF + numberClr === 4) {
@@ -53,7 +52,6 @@ export const stateColorReducer = (
         };
       }
       if (countF + numberClr < 4) {
-        console.log(countF, 'countF');
         return {
           ...state,
           numberSecondBtn: countF + numberClr,
