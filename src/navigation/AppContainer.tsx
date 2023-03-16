@@ -4,8 +4,8 @@ import {createDrawerNavigator} from '@react-navigation/drawer';
 import {Loader} from '../components/Loader';
 import {AppNavigator} from './navigators/AppNavigator';
 import {AuthNavigator} from './navigators/AuthNavigator';
-import {View} from 'react-native';
 import Button from '../components/Button/Button';
+import {ViewContainer} from './styles';
 
 const DrawerTab = createDrawerNavigator();
 
@@ -29,7 +29,7 @@ export const AppContainer = () => {
 
 function DrawerView(props: any) {
   return (
-    <View style={{marginTop: 40}}>
+    <ViewContainer>
       <Button
         type="secondary"
         onPress={() => {
@@ -46,6 +46,6 @@ function DrawerView(props: any) {
         background={false}>
         Second Page
       </Button>
-    </View>
+    </ViewContainer>
   );
 }
