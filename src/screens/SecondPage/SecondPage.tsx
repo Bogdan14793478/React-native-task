@@ -18,8 +18,8 @@ const SecondPage = () => {
   const renderItem: ListRenderItem<Post> = useCallback(({item}) => {
     return (
       <View key={item.id}>
-        <Text style={styles.text}>{item.title}</Text>
-        <Text style={styles.text}>{item.body}</Text>
+        <Text style={styles.textSmall}>{item.title}</Text>
+        <Text style={styles.textSmall}>{item.body}</Text>
       </View>
     );
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -34,6 +34,7 @@ const SecondPage = () => {
   useEffect(() => {
     setStatePosts(posts);
   }, [posts]);
+
   return (
     <View style={styles.container}>
       <Text style={styles.text}>SecondPage</Text>

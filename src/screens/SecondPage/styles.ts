@@ -17,6 +17,12 @@ const getStyles = () => {
       fontWeight: 'bold',
       color: colors.text,
     },
+    textSmall: {
+      marginBottom: 2,
+      fontSize: 8,
+      fontWeight: 'bold',
+      color: '#fff',
+    },
     backgroundImage: {
       flex: 1,
       resizeMode: 'cover',

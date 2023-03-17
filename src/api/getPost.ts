@@ -18,9 +18,3 @@ export function getAllPosts() {
     });
   };
 }
-
-// export const getAllPosts = () => {
-//   axiosInstance.get<never, AxiosResponse<Post[]>>('/posts').then(res => {
-//     console.log(res, 'res');
-//   });
-// };
