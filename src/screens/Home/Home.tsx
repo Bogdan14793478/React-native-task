@@ -65,11 +65,24 @@ const Home = () => {
         </ViewContainer>
       </TouchBtn>
 
-      <AnimatedButton
+      {colorThirdBtn === '' ? (
+        <TouchBtn onPress={() => changeColorBtn('third')}>
+          <ViewContainer>
+            <TextContainer>Press Btn 3</TextContainer>
+          </ViewContainer>
+        </TouchBtn>
+      ) : (
+        <AnimatedButton
+          onPress={() => changeColorBtn('third')}
+          label="Press Btn 3"
+          backgroundColor={colorThirdBtn}
+        />
+      )}
+      {/* <AnimatedButton
         onPress={() => changeColorBtn('third')}
         label="Press Btn 3"
         backgroundColor={colorThirdBtn}
-      />
+      /> */}
     </View>
   );
 };

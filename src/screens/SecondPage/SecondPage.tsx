@@ -4,6 +4,7 @@ import getStyles from './styles';
 import {getAllPosts} from '../../api/getPost';
 import {useDispatch, useSelector} from 'react-redux';
 import {Post, RootState} from '../../redux/actions/interface';
+import {Card} from '../../components/Card/Card';
 
 const SecondPage = () => {
   const dispatch: any = useDispatch();
@@ -17,6 +18,7 @@ const SecondPage = () => {
 
   const renderItem: ListRenderItem<Post> = useCallback(({item}) => {
     return (
+      // <Card title={item.title} description={item.body} />
       <View key={item.id}>
         <Text style={styles.textSmall}>{item.title}</Text>
         <Text style={styles.textSmall}>{item.body}</Text>

@@ -27,16 +27,6 @@ const getStyles = () => {
       flex: 1,
       resizeMode: 'cover',
     },
-    // bottomSheet: {
-    //   overflow: 'hidden',
-    //   position: 'absolute',
-    //   width: '100%',
-    //   zIndex: 1,
-    //   // Here you can set a common style for all bottom sheets, or nothing if you
-    //   // want different designs
-    //   backgroundColor: colors.background,
-    //   borderRadius: 16,
-    // },
   });
 };
 
